@@ -1,6 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 import { IndexRoute, Route } from 'react-router';
+//import Horizon from './horizon-container';
+//import Horizon from '@horizon/server';
 
 import { Grid, Row, Col, MainContainer } from '@sketchpixy/rubix';
 
@@ -11,7 +13,7 @@ import Header from './common/header';
 import Sidebar from './common/sidebar';
 
 /* Pages */
-
+import Home from './routes/Home';
 import Homepage from './routes/Homepage';
 
 import Dashboard from './routes/Dashboard';
