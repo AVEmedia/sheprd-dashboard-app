@@ -1,1 +1,4 @@
 node_modules/
+.hz/
+tmp/bundle.js
+tmp/bundle.js.map

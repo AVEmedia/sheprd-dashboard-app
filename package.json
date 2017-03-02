@@ -84,12 +84,14 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "@horizon/client": "^2.0.0",
+    "@horizon/server": "^2.0.0",
     "@sketchpixy/rubix": "^2.0.0",
     "babel-cli": "^6.10.1",
     "classnames": "^2.2.5",
     "compression": "^1.6.2",
     "cookie-parser": "^1.4.3",
-    "express": "^4.14.0",
+    "express": "^4.14.1",
     "pug": "^2.0.0-beta3",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",

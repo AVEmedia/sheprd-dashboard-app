@@ -19,8 +19,14 @@ var wds = {
   hostname: process.env.WP_HOST || "localhost",
   port: process.env.WP_PORT || 8079
 };
-
+/*
+var wds = {
+  hostname: process.env.WP_HOST || "localhost",
+  port: process.env.WP_PORT || 8081
+};
+*/
 var wdsPath = "http://" + wds.hostname + ":" + wds.port;
+//var wdsPath = "https://" + wds.hostname + ":" + wds.port;
 var publicPath = wdsPath + "/assets/";
 
 var devtool = '';

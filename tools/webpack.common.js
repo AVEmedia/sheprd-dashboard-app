@@ -4,21 +4,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules|bower_components/,
-        loader: 'babel',
-        query: {
-          presets: [
-            'babel-preset-react',
-            'babel-preset-es2015',
-            'babel-preset-stage-0'
-          ].map(require.resolve),
-          plugins: [
-            "babel-plugin-transform-es2015-modules-commonjs",
-            "babel-plugin-transform-decorators-legacy",
-            "react-hot-loader/babel",
-            "babel-plugin-transform-runtime"
-          ].map(require.resolve),
-          "compact": true
-        }
+        loader: 'babel'
       },
       {
         test: /\.json$/, loader: 'json'
