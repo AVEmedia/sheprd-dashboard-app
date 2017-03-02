@@ -5,6 +5,7 @@
     "stage-0"
   ],
   "plugins": [
+    "transform-es2015-modules-commonjs",
     "transform-decorators-legacy",
     "react-hot-loader/babel",
     "transform-runtime"
