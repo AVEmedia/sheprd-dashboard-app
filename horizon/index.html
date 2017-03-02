@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="horizon/horizon.js"></script>
+    <script>
+      var horizon = Horizon();
+      
+      /*
+      horizon.onReady(function() {
+        document.querySelector('h1').innerHTML = 'Sheprd works!'
+      });
+      horizon.connect();
+      */
+
+      if (!horizon.hasAuthToken()) {
+          horizon.authEndpoint('auth0').subscribe((endpoint) => {
+            window.location.replace(endpoint);
+          });
+      } else {
+          horizon.onReady(function() {
+            document.querySelector('h1').innerHTML = 'Sheprd works!'
+          });
+          horizon.connect();
+      }
+
+    </script>
+  </head>
+  <body>
+   <marquee direction="left"><h1></h1></marquee>
+   <p>No Marquee, Horizon is not connected!</p>
+  </body>
+</html>
